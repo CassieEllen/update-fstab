@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+rm -f -I       \
+   *~          \
+   fstab       \
+   fstab.bak   \
+   fstab.new   \
+   hosts.json  \
+   shares.json \
+   mount.sh
+cp fstab.orig fstab
+
+ls -1 --color
