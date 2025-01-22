@@ -152,7 +152,7 @@ def main():
         for share in shares[server]:
             share_name = '//' + hosts[server] + '/' + share
             share_mount = f'/mnt/{share}'
-            mnt_fp.write('mkdir -p ' + share_mount + '\n')
+            mnt_fp.write('sudo mkdir -p ' + share_mount + '\n')
             pad = ' ' * (max_name_len - len(share))
             line = f'{share_name}{pad}{share_mount}{pad}cifs {OPTIONS} 0 0'
             new_shares.append(line)

@@ -1,3 +1,10 @@
+# Ignore generated files
+fstab
+fstab.bak
+hosts.json
+mount.sh
+shares.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
